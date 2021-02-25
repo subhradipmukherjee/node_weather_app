@@ -11,6 +11,7 @@ const app = express()
 
 //console.log(path.join(__dirname,'../'))
 
+const port = process.env.PORT || 3000
 
 // define express config path
 const public_path = path.join(__dirname,'../public')
@@ -128,6 +129,7 @@ app.get('*',(req,res)=>{
 
 
 
+//subhradipmukherjee/node_weather_app.git
 
 // geocode(addr,(err,resp)=>{
 
@@ -148,9 +150,9 @@ app.get('*',(req,res)=>{
 
 //     }
 
-// })
+// }) 
 
  
-app.listen(3000,()=>{
-    console.log("listeing on port 3000")
+app.listen(port,()=>{
+    console.log("listeing on port "+ port)
 })

@@ -19,7 +19,7 @@ webform.addEventListener('submit',(e)=>{
       msg1.textContent='Please provide a valid location to search'
       console.log('Please provide a valid location to search')
    } else {
-      fetch('http://localhost:3000/weather?address='+search.value).then((response)=>{
+      fetch('/weather?address='+search.value).then((response)=>{
     
          response.json().then((data)=>{
           if(data.error)
