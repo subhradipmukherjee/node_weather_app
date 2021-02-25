@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    
+    <title>weather</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    
+    
+    
+</head>
+<body>
+    <div class="main-content">
+           
+    {{>header}}
+    
+    This is the {{title}} page 
+
+    <form style="margin-top: 20px;">
+    <input type="text" name="loc" placeholder="Location"> <button >search</button>
+    </form>
+
+    <p id="p1"> </p>
+    
+    <p id="p2"> </p>
+   
+    </div>
+
+    {{>footer}}
+
+    <script src="./js/web.js"></script>
+</body>
+
+
+
+
+
+</html>
