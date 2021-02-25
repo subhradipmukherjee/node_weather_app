@@ -30,7 +30,7 @@ app.get('',(req,res)=>{
 
     res.render('index',{
         title: 'Weather',
-        name: 'Roop'
+        name: 'Subhradip'
     })
 })
 
@@ -38,7 +38,7 @@ app.get('/help',(req,res)=>{
 
     res.render('help',{
         title: 'HELP',
-        name: 'Roop'
+        name: 'Subradip'
     })
 })
 
@@ -47,7 +47,7 @@ app.get('/about',(req,res)=>{
 
     res.render('about',{
         title: 'ABOUT',
-        name: 'Roop'
+        name: 'Subradip'
     })
 })
 
@@ -56,7 +56,7 @@ app.get('/about',(req,res)=>{
 app.get('/help/*',(req,res)=>{
     res.render('404',{
         title: '404',
-        name: 'Roop',
+        name: 'Subradip',
         error: 'HELP PAGE NOT FOUND .'
     })
 })
